@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv'
 import cors from 'cors';
 import connectDB from './utils/db.js';
-
+import UserRoute from './Routes/user.route.js'
 dotenv.config();
 const app = express();
 
@@ -22,6 +22,8 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
+
+app.use('/api/user',UserRoute)// api for user register is http://localhost:5000/api/user
 app.listen(PORT,()=>{
     connectDB();
     console.log(`Server running at port ${PORT}`);
