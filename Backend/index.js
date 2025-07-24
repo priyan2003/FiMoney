@@ -4,6 +4,7 @@ import dotenv from 'dotenv'
 import cors from 'cors';
 import connectDB from './utils/db.js';
 import UserRoute from './Routes/user.route.js'
+import ProductRoute from './Routes/product.route.js'
 dotenv.config();
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
 
 app.use('/api/user',UserRoute)// api for user register is http://localhost:5000/api/user
+app.use('/api/product',ProductRoute) // api to add product is http://localhost:5000/api/product
 app.listen(PORT,()=>{
     connectDB();
     console.log(`Server running at port ${PORT}`);
