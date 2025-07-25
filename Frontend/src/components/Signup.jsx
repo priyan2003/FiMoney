@@ -30,7 +30,7 @@ const Signup = () => {
     setMessage(null);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/user/register', formData, {
+      const res = await axios.post('https://fimoney-backend.onrender.com/api/user/register', formData, {
         withCredentials: true, // required if backend uses cookies
       });
 
