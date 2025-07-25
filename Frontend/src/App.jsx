@@ -2,6 +2,8 @@ import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Signup from './components/Signup'
 import Login from './components/login'
+import AddProduct from './components/AddProduct'
+import UpdateProduct from './components/UpdateProduct'
 const appRouter = createBrowserRouter(
   [
     // {
@@ -15,6 +17,14 @@ const appRouter = createBrowserRouter(
     {
       path: '/login',
       element:<Login/>
+    },
+    {
+      path: '/addproduct',
+      element:<AddProduct/>
+    },
+    {
+      path: '/updateproduct/:productId',  // <-- dynamic route for updating
+      element: <UpdateProduct />
     }
   ]
 )

@@ -83,3 +83,34 @@ export const updateProduct = async (req, res) => {
     });
   }
 };
+
+
+export const getProductById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log(id);
+    
+    // Find product by ID
+    const product = await Product.findById(id);
+
+    if (!product) {
+      return res.status(404).json({
+        mess: 'Product not found',
+        success: false,
+      });
+    }
+
+    return res.status(200).json({
+      mess: 'Product fetched successfully',
+      success: true,
+      product,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      mess: 'Internal Server Error',
+      success: false,
+    });
+  }
+};
+
