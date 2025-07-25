@@ -30,7 +30,7 @@ const AddProduct = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/product/addproduct', formData);
+      const res = await axios.post('https://fimoney-backend.onrender.com/api/product/addproduct', formData);
       setMessage({ type: 'success', text: res.data.mess });
       setFormData({
         name: '',
