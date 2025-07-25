@@ -9,7 +9,6 @@ import path from "path"
 dotenv.config();
 const app = express();
 
-const _dirname = path.resolve();
 
 app.get('/home',(req, res)=>{
     return res.status(200).json({
@@ -32,10 +31,7 @@ const PORT = process.env.PORT || 5000;
 app.use('/api/user',UserRoute)// api for user register is http://localhost:5000/api/user
 app.use('/api/product',ProductRoute) // api to add product is http://localhost:5000/api/product
 
-app.use(express.static(path.join(_dirname, "/Frontend/dist")))
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
-});
+
 
 app.listen(PORT,()=>{
     connectDB();
