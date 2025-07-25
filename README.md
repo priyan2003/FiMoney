@@ -1,4 +1,4 @@
-# 📦 FIMoney Inventory Management System
+# 📦 FIMoney Assignment
 A full-stack backend project for managing user authentication and product inventory using RESTful APIs. Built with **Node.js**, **Express**, and **MongoDB**, it supports adding, updating, and fetching product data along with user registration and login.
 
 ---
