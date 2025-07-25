@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
     "dev": "nodemon Backend/index.js",
-    "start": "nodemon Backend/index.js"
+    "start": "node Backend/index.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
