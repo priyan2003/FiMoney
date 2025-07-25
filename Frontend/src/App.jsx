@@ -1,11 +1,11 @@
 import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Signup from './components/Signup'
-import Login from './components/login'
 import AddProduct from './components/AddProduct'
 import UpdateProduct from './components/UpdateProduct'
 import Home from './components/Home'
 import ByProduct from './components/ByProduct'
+import Login from './components/Login'
 const appRouter = createBrowserRouter(
   [
     {
