@@ -5,6 +5,7 @@ import Login from './components/login'
 import AddProduct from './components/AddProduct'
 import UpdateProduct from './components/UpdateProduct'
 import Home from './components/Home'
+import ByProduct from './components/ByProduct'
 const appRouter = createBrowserRouter(
   [
     {
@@ -22,6 +23,10 @@ const appRouter = createBrowserRouter(
     {
       path: '/addproduct',
       element:<AddProduct/>
+    },
+    {
+      path: '/byproduct',
+      element:<ByProduct/>
     },
     {
       path: '/updateproduct/:productId',  // <-- dynamic route for updating

@@ -35,7 +35,7 @@ const Login = () => {
       // localStorage.setItem("token", res.data.token);
 
       // Redirect to dashboard/home
-      setTimeout(() => navigate('/dashboard'), 1500);
+      setTimeout(() => navigate('/byproduct'), 1500);
     } catch (err) {
       const errMsg = err.response?.data?.mess || 'Login failed';
       setMessage({ type: 'error', text: errMsg });

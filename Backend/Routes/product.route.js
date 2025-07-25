@@ -1,5 +1,6 @@
 import express from 'express';
 import { addProduct, getProductById, updateProduct } from '../Controllers/product.controller.js';
+import isAuthenticated from '../middlewares/isAuthenticated.js';
 const router = express.Router();
 
 router.route('/addproduct').post(addProduct);
