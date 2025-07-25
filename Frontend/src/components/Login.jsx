@@ -25,7 +25,7 @@ const Login = () => {
     setMessage(null);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/user/login', formData, {
+      const res = await axios.post('https://fimoney-backend.onrender.com/api/user/login', formData, {
         withCredentials: true, // ✅ Required for cookie-based auth
       });
 
