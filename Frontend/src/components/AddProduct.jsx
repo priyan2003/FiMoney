@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const AddProduct = () => {
   const [formData, setFormData] = useState({
@@ -49,6 +50,8 @@ const AddProduct = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
       <form
         onSubmit={handleSubmit}
@@ -92,6 +95,7 @@ const AddProduct = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

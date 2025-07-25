@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -52,6 +53,8 @@ const Signup = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
       <form
         onSubmit={handleSubmit}
@@ -132,6 +135,7 @@ const Signup = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

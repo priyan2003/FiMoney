@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const UpdateProduct = () => {
   const { productId } = useParams();
@@ -54,6 +55,8 @@ const UpdateProduct = () => {
   if (loading) return <div className="text-center mt-10">Loading...</div>;
 
   return (
+    <>
+    <Navbar/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-xl">
         <h2 className="text-2xl font-bold mb-6 text-center">Update Product</h2>
@@ -135,6 +138,7 @@ const UpdateProduct = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 
