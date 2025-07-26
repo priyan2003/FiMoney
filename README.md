@@ -21,7 +21,7 @@ A full-stack backend project for managing user authentication and product invent
 | Backend   | Node.js, Express.js         |
 | Database  | MongoDB with Mongoose       |
 | Auth      | JWT + Cookies               |
-| Docs      | Swagger/OpenAPI             |
+| Docs      | README.md                   |
 | Testing   | Postman                     |
 
 ---
