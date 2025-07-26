@@ -30,8 +30,8 @@ A full-stack backend project for managing user authentication and product invent
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/fimoney-backend.git
-cd fimoney-backend
+git clone https://github.com/priyan2003/fimoney.git
+cd backend
 ```
 
 ### 2️⃣ Install Dependencies
@@ -43,7 +43,7 @@ npm install
 Create a `.env` file in the root directory:
 ```env
 # Server Configuration
-PORT=5000
+PORT=X000
 NODE_ENV=development
 
 # Database Configuration
@@ -97,7 +97,7 @@ http://localhost:5000
 
 #### Register User
 ```http
-POST /api/v1/user/register
+POST /api/user/register
 Content-Type: application/json
 
 {
