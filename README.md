@@ -181,14 +181,14 @@ fimoney-backend/
 │   ├── config/
 │   │   └── database.js
 │   └── utils/
-│       └── jwt.js
+│       └── isAuthenticator.js
 ├── docs/
-│   ├── swagger.yaml
-│   └── postman_collection.json
+│   ├── README.md
+│   └── APIDocumentation.md
 ├── .env
 ├── .gitignore
 ├── package.json
-├── server.js
+├── index.js
 └── README.md
 ```
 
