@@ -232,8 +232,8 @@ curl -X POST http://localhost:5000/api/product/addproduct \
 
 ```json
 {
-  "start": "node server.js",
-  "dev": "nodemon server.js",
+  "start": "node index.js",
+  "dev": "nodemon index.js",
   "test": "jest",
   "lint": "eslint .",
   "lint:fix": "eslint . --fix"
