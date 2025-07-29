@@ -21,7 +21,7 @@ const UpdateProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/product/fetch-product/${productId}`);
+        const res = await axios.get(`https://fimoney-backend.onrender.com/api/product/fetch-product/${productId}`);
         setFormData(res.data.product);
       } catch (err) {
         console.error(err);
