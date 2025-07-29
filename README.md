@@ -164,32 +164,35 @@ Content-Type: application/json
 
 ## 📁 Project Structure
 ```
-fimoney-backend/
-├── src/
-│   ├── controllers/
-│   │   ├── userController.js
-│   │   └── productController.js
-│   ├── models/
-│   │   ├── User.js
-│   │   └── Product.js
-│   ├── routes/
-│   │   ├── userRoutes.js
-│   │   └── productRoutes.js
-│   ├── middleware/
-│   │   ├── auth.js
-│   │   └── errorHandler.js
-│   ├── config/
-│   │   └── database.js
-│   └── utils/
-│       └── isAuthenticator.js
+fimoney/
+├── controllers/
+│   ├── userController.js
+│   └── productController.js
+├── models/
+│   ├── User.js
+│   └── Product.js
+├── routes/
+│   ├── userRoutes.js
+│   └── productRoutes.js
+├── middleware/        # rename `middlewares` → `middleware`
+│   ├── auth.js
+│   └── errorHandler.js
+├── utils/
+│   └── isAuthenticator.js
+├── config/
+│   └── database.js
 ├── docs/
 │   ├── README.md
 │   └── APIDocumentation.md
 ├── .env
 ├── .gitignore
-├── package.json
+├── Dockerfile         # rename dockerfile → Dockerfile
+├── docker-compose.yml # rename compose.yml → docker-compose.yml
 ├── index.js
+├── package.json
+├── package-lock.json
 └── README.md
+
 ```
 
 ---
@@ -206,7 +209,7 @@ fimoney-backend/
 
 **1. Register a new user:**
 ```bash
-curl -X POST http://localhost:5000/api/v1/user/register \
+curl -X POST http://localhost:5000/api/v1/user/register 
   -H "Content-Type: application/json" \
   -d '{"name":"Test User","email":"test@example.com","password":"password123"}'
 ```
