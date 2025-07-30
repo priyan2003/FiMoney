@@ -104,7 +104,7 @@ Content-Type: application/json
   "fullname": "John Doe",
   "email": "john@example.com",
   "password": "password123",
-  "phoneNumber": 9977xxxxxx,
+  "phoneNumber": 997700,
   "role" : "customer"
 }
 ```
