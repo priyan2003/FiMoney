@@ -14,8 +14,6 @@ services:
       - .:/app
       - /app/node_modules
     command: sh -c "node index.js"
-    mongo:
-    image: mongo:6
 
   mongo:
     image: mongo:6
