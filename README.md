@@ -101,9 +101,11 @@ POST /api/user/register
 Content-Type: application/json
 
 {
-  "name": "John Doe",
+  "fullname": "John Doe",
   "email": "john@example.com",
-  "password": "password123"
+  "password": "password123",
+  "phoneNumber": 9977xxxxxx,
+  "role" : "customer"
 }
 ```
 
@@ -114,7 +116,8 @@ Content-Type: application/json
 
 {
   "email": "john@example.com",
-  "password": "password123"
+  "password": "password123",
+  "role" : "admin"
 }
 ```
 
